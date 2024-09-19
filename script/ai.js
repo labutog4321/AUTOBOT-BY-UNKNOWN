@@ -26,7 +26,7 @@ module.exports.run = async function ({ api, event, args }) {
         }
 
         // Delay
-        await new Promise(resolve => setTimeout(resolve, 2000)); // Adjust the delay time as needed
+        await new Promise(resolve => setTimeout(resolve, 1000)); // Adjust the delay time as needed
 
         const gpt4_api = `https://gpt4withcustommodel.onrender.com/gpt?query=${encodeURIComponent(prompt)}&model=gpt-4-32k-0314`;
 
